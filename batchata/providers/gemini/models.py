@@ -10,8 +10,8 @@ from ..model_config import ModelConfig
 # Google Gemini models with batch processing support
 # Batch mode provides 50% discount on standard API pricing
 GEMINI_MODELS = {
-    "gemini-3.0-pro-preview": ModelConfig(
-        name="gemini-3.0-pro-preview",
+    "gemini-3-pro-preview": ModelConfig(
+        name="gemini-3-pro-preview",
         max_input_tokens=1048576,  # 1M context
         max_output_tokens=65536,
         batch_discount=0.5,  # 50% discount confirmed in docs
@@ -21,8 +21,8 @@ GEMINI_MODELS = {
         supports_structured_output=True,
         file_types=[".pdf", ".txt", ".jpg", ".png", ".webp"]
     ),
-    "gemini-3.0-flash-preview": ModelConfig(
-        name="gemini-3.0-flash-preview",
+    "gemini-3-flash-preview": ModelConfig(
+        name="gemini-3-flash-preview",
         max_input_tokens=1048576,  # 1M context
         max_output_tokens=65536,
         batch_discount=0.5,  # 50% discount confirmed in docs
